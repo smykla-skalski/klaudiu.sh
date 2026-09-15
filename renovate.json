@@ -17,11 +17,7 @@
     "security:openssf-scorecard",
     "group:linters"
   ],
-  "ignorePaths": [
-    "**/tmp/**",
-    ".github/workflows/smyklot-pr-commands.yml",
-    ".github/workflows/smyklot-poll.yml"
-  ],
+  "ignorePaths": ["**/tmp/**", ".github/workflows/smyklot-pr-commands.yml", ".github/workflows/smyklot-poll.yml"],
   "osvVulnerabilityAlerts": true,
   "gitIgnoredAuthors": ["205507218+smyklot[bot]@users.noreply.github.com"],
   "automergeStrategy": "squash",
@@ -34,50 +30,53 @@
       "semanticCommitType": "ci"
     },
     {
-      "description": "Group SvelteKit ecosystem dependencies",
-      "groupName": "SvelteKit",
-      "matchPackageNames": [
-        "@sveltejs/**",
-        "svelte",
-        "svelte-check"
-      ]
+      "description": "Group Go tool dependencies",
+      "groupName": "Go tooling",
+      "matchDepTypes": ["require"],
+      "matchManagers": ["gomod"],
+      "matchPackageNames": ["/^golang.org/x/tools/"]
     },
     {
-      "description": "Group shadcn-svelte and bits-ui dependencies",
-      "groupName": "shadcn-svelte",
-      "matchPackageNames": [
-        "bits-ui",
-        "tailwind-variants",
-        "clsx",
-        "tailwind-merge"
-      ]
+      "description": [
+        " Group dependency bumps from selected GitHub sources into a single PR across managers",
+        " (e.g., mise and gomod) to avoid separate PRs per manager"
+      ],
+      "matchSourceUrls": ["https://github.com/{onsi/ginkgo,golangci/golangci-lint}"],
+      "groupName": "{{{replace 'https://github\\.com/[a-z-]+/' '' sourceUrl}}}"
     },
     {
-      "description": "Group testing dependencies",
-      "groupName": "testing",
-      "matchPackageNames": [
-        "vitest",
-        "@testing-library/**",
-        "@playwright/test",
-        "jsdom"
-      ]
-    },
-    {
-      "description": "Group Tailwind CSS dependencies",
-      "groupName": "Tailwind CSS",
-      "matchPackageNames": [
-        "tailwindcss",
-        "@tailwindcss/**"
-      ]
+      "description": "Group Go version updates from gomod and mise into a single PR",
+      "groupName": "go version",
+      "matchDepNames": ["go"],
+      "matchManagers": ["gomod", "mise"],
+      "rangeStrategy": "bump"
     },
     {
       "description": "Smyklot action managed by sync-smyklot workflow",
       "enabled": false,
       "matchManagers": ["github-actions"],
       "matchPackageNames": ["smykla-skalski/smyklot"]
+    },
+    {
+      "description": "Group SvelteKit ecosystem dependencies",
+      "groupName": "SvelteKit",
+      "matchPackageNames": ["@sveltejs/**", "svelte", "svelte-check"]
+    },
+    {
+      "description": "Group shadcn-svelte and bits-ui dependencies",
+      "groupName": "shadcn-svelte",
+      "matchPackageNames": ["bits-ui", "tailwind-variants", "clsx", "tailwind-merge"]
+    },
+    {
+      "description": "Group testing dependencies",
+      "groupName": "testing",
+      "matchPackageNames": ["vitest", "@testing-library/**", "@playwright/test", "jsdom"]
+    },
+    {
+      "description": "Group Tailwind CSS dependencies",
+      "groupName": "Tailwind CSS",
+      "matchPackageNames": ["tailwindcss", "@tailwindcss/**"]
     }
   ],
-  "vulnerabilityAlerts": {
-    "automerge": true
-  }
+  "vulnerabilityAlerts": {"automerge": true}
 }
