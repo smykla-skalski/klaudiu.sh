@@ -58,8 +58,8 @@ importers:
         specifier: 25.3.0
         version: 25.3.0
       bits-ui:
-        specifier: 2.16.1
-        version: 2.16.1(@internationalized/date@3.11.0)(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))
+        specifier: 2.20.6
+        version: 2.20.6(@internationalized/date@3.11.0)(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))
       clsx:
         specifier: 2.1.1
         version: 2.1.1
@@ -91,11 +91,11 @@ importers:
         specifier: 4.4.2
         version: 4.4.2(picomatch@4.0.5)(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)
       tailwind-merge:
-        specifier: 3.5.0
-        version: 3.5.0
+        specifier: 3.7.0
+        version: 3.7.0
       tailwind-variants:
-        specifier: 3.2.2
-        version: 3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.3.3)
+        specifier: 3.3.1
+        version: 3.3.1(tailwind-merge@3.7.0)(tailwindcss@4.3.3)
       tailwindcss:
         specifier: 4.3.3
         version: 4.3.3
@@ -958,8 +958,8 @@ packages:
   bidi-js@1.0.3:
     resolution: {integrity: sha512-RKshQI1R3YQ+n9YJz2QQ147P66ELpa1FQEg20Dk8oW9t2KgLbpDLLp9aGZ7y8WHSshDknG0bknqGw5/tyCs5tw==}
 
-  bits-ui@2.16.1:
-    resolution: {integrity: sha512-/TQ975f98yfjbNaUtIRZZG761f3ghABUkuWImUPf0oP4+jL8TSKQqfM+hfYTRtvS5TTlLAEa7vcyKVBTWUItBw==}
+  bits-ui@2.20.6:
+    resolution: {integrity: sha512-V4fgaFAtw+d8xS+3SBuLqouDsAo06991oJnW3hdEx0O1O/sl+BGLKKdZ0i4ZI1mgqT0JXJJ+6avI750OkvgZrA==}
     engines: {node: '>=20'}
     peerDependencies:
       '@internationalized/date': ^3.8.1
@@ -1833,8 +1833,8 @@ packages:
       svelte:
         optional: true
 
-  svelte-toolbelt@0.10.6:
-    resolution: {integrity: sha512-YWuX+RE+CnWYx09yseAe4ZVMM7e7GRFZM6OYWpBKOb++s+SQ8RBIMMe+Bs/CznBMc0QPLjr+vDBxTAkozXsFXQ==}
+  svelte-toolbelt@0.10.7:
+    resolution: {integrity: sha512-gjuUVEEpo38UJCeI1ssE3NxG31tYENczPTcTGTXf4338qAQNdR9I1oAEbQY0KQFmbdUojNIhHuRNix7ThwFNxQ==}
     engines: {node: '>=18', pnpm: '>=8.7.0'}
     peerDependencies:
       svelte: ^5.30.2
@@ -1852,20 +1852,22 @@ packages:
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  tabbable@6.5.0:
-    resolution: {integrity: sha512-wieBHXygIm7OyQOu5hQlkk62/WyCFYGlWg7L6/ZCUZwx0o398Zkn4pVmMyfYhfMG8kGrj/Krt8eIk6UKC6VzwA==}
+  tabbable@6.5.1:
+    resolution: {integrity: sha512-dMCuwDUY6Noz3zVKLefBC4wq+aJV20yc7vWmM7uTNGwtQSFF5kX7OUIUsxuVajz/bdt5Xqdah3/0NLjth+cM5A==}
 
-  tailwind-merge@3.5.0:
-    resolution: {integrity: sha512-I8K9wewnVDkL1NTGoqWmVEIlUcB9gFriAEkXkfCjX5ib8ezGxtR3xD7iZIxrfArjEsH7F1CHD4RFUtxefdqV/A==}
+  tailwind-merge@3.7.0:
+    resolution: {integrity: sha512-XPPUyAc+cvspz3lHTcR/QgPfW2A0lv/xQNIjX3HGhLR+Nq2lHaLq5MtTesHn8GUr3W3DguT2KT5x3NVgRtYwmA==}
 
-  tailwind-variants@3.2.2:
-    resolution: {integrity: sha512-Mi4kHeMTLvKlM98XPnK+7HoBPmf4gygdFmqQPaDivc3DpYS6aIY6KiG/PgThrGvii5YZJqRsPz0aPyhoFzmZgg==}
-    engines: {node: '>=16.x', pnpm: '>=7.x'}
+  tailwind-variants@3.3.1:
+    resolution: {integrity: sha512-4pAvwUtM4HKBiRZftncAbpn6V9Hhwoa5Fl7O2u5zbp7Z5Cvu+/o/6+176WY3WCEES209543quG8zFIcXCsc5Jw==}
+    engines: {node: '>=16.9.x', pnpm: '>=7.x'}
     peerDependencies:
       tailwind-merge: '>=3.0.0'
       tailwindcss: '*'
     peerDependenciesMeta:
       tailwind-merge:
+        optional: true
+      tailwindcss:
         optional: true
 
   tailwindcss@4.3.3:
@@ -2856,7 +2858,7 @@ snapshots:
     dependencies:
       require-from-string: 2.0.2
 
-  bits-ui@2.16.1(@internationalized/date@3.11.0)(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0)):
+  bits-ui@2.20.6(@internationalized/date@3.11.0)(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0)):
     dependencies:
       '@floating-ui/core': 1.8.0
       '@floating-ui/dom': 1.8.0
@@ -2864,8 +2866,8 @@ snapshots:
       esm-env: 1.2.2
       runed: 0.35.1(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))
       svelte: 5.55.7(@typescript-eslint/types@8.67.0)
-      svelte-toolbelt: 0.10.6(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))
-      tabbable: 6.5.0
+      svelte-toolbelt: 0.10.7(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))
+      tabbable: 6.5.1
     transitivePeerDependencies:
       - '@sveltejs/kit'
 
@@ -3695,7 +3697,7 @@ snapshots:
     optionalDependencies:
       svelte: 5.55.7(@typescript-eslint/types@8.67.0)
 
-  svelte-toolbelt@0.10.6(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0)):
+  svelte-toolbelt@0.10.7(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0)):
     dependencies:
       clsx: 2.1.1
       runed: 0.35.1(@sveltejs/kit@2.70.2(@sveltejs/vite-plugin-svelte@7.3.0(svelte@5.55.7(@typescript-eslint/types@8.67.0))(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))(typescript@5.9.3)(vite@8.2.1(@types/node@25.3.0)(jiti@2.7.0)))(svelte@5.55.7(@typescript-eslint/types@8.67.0))
@@ -3734,15 +3736,14 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
-  tabbable@6.5.0: {}
+  tabbable@6.5.1: {}
 
-  tailwind-merge@3.5.0: {}
+  tailwind-merge@3.7.0: {}
 
-  tailwind-variants@3.2.2(tailwind-merge@3.5.0)(tailwindcss@4.3.3):
-    dependencies:
-      tailwindcss: 4.3.3
+  tailwind-variants@3.3.1(tailwind-merge@3.7.0)(tailwindcss@4.3.3):
     optionalDependencies:
-      tailwind-merge: 3.5.0
+      tailwind-merge: 3.7.0
+      tailwindcss: 4.3.3
 
   tailwindcss@4.3.3: {}
 
